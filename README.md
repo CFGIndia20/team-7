@@ -7,5 +7,5 @@ Manan Rajotia manansharma.2604@gmail.com +918860103101
 Palak Chavan palakchauhan381@gmail.com 8369955907-(lets create a whatsapp group I suggest) 
 (Yup created one lets add everyone as they append their names)
 Dhanashree Shetty dhanashree.shetty.771@live.com 9987446421
-Mehak Garg mehakgarg426@gmail.com 8708260184
 (Great idea Anjali, Palak!)
+Mehak Garg mehakgarg426@gmail.com 8708260184

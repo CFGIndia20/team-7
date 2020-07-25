@@ -1,0 +1,19 @@
+{
+  "name": "team-7",
+  "version": "1.0.0",
+  "description": "A project aiming to make the process of feedback collection and data manipulation easy for St Judes Organization",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CFGIndia20/team-7.git"
+  },
+  "author": "Team-7",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CFGIndia20/team-7/issues"
+  },
+  "homepage": "https://github.com/CFGIndia20/team-7#readme"
+}

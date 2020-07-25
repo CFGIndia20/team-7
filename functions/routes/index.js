@@ -9,6 +9,10 @@ router.get('/', (req,res)=>{
 	res.render("homepage");
 });
 
+router.get('/donor', (req,res)=>{
+	res.render("donor.ejs");
+});
+
 router.get("/login",(req,res)=>{
 	res.render("login");
 

@@ -10,6 +10,12 @@ router.get('/', (req,res)=>{
 });
 
 
+router.get('/donor', (req,res)=>{
+	res.render("donor");
+});
+
+router.get("/login",(req,res)=>{
+	res.render("login");
 
 router.get("/admin",(req,res)=>{
 	res.render("admin");

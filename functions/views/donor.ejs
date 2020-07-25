@@ -1,3 +1,41 @@
-<%- include ("partial/header") %>
 
-<%- include ("parlial/header") %>
+<%- include("partials/header.ejs") %>
+
+<div class="container">
+
+<center>
+
+    <h3>Welcome, DonorName!</h3>
+
+    <p>Here's a list of units you have donated to-</p>
+    <table BORDER="2" cellpadding="2" cellspacing="2" width="400">
+        <tr>
+            <th>Centre</th>
+            <th>Unit</th>
+        </tr>
+        <tr>
+            <td>Centre 1</th>
+            <td>Unit 1</th>
+        </tr>
+        <tr>
+            <td>Centre 2</th>
+            <td>Unit 2</th>
+        </tr>  
+        <tr>
+            <td>Centre 2</th>
+            <td>Unit 2</th>
+        </tr>        
+    </table>
+
+    <br>
+
+    <h4>You've impacted 5 children with this donation!</h4>
+    <h4>More to go!</h4>
+
+    <h6><a href="#">For a detailed report on all your donations, click here</a></h6>
+
+</center>
+
+</div>
+
+<%- include("partials/footer.ejs") %>

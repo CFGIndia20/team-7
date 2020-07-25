@@ -18,6 +18,7 @@ router.get("/donor",(req,res)=>{
 
 router.get("/login",(req,res)=>{
 	res.render("login");
+});
 
 });
 

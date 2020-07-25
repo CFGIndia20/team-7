@@ -1,10 +1,12 @@
 body{
+
 	 background: url("images/bg.jpg") no-repeat center center fixed; 
 	-webkit-background-size:cover;
 	-moz-background-size : cover;
 	-o-background-size:cover;
 	background-size: cover;
 	padding-top: 80px;
+
 }
 h1{
 	font-style: bold;
@@ -26,10 +28,30 @@ border-radius:50%;
 }
 
 .navbar{
+
    border-radius:10;
+
+	background-color: #f58220;
+
 }
 
 .navbar-brand{
    font-family: 'Satisfy', cursive;
+   color: white;
+   font-size: 3em;
+   margin: 1em;	
+}
+
+#navbarCollapse > ul{
+	font-size: 1.5em;
+}
+
+#navbarCollapse > ul > li{
+	margin: 1em;
+	padding: 30dp;
+}
+
+#navbarCollapse > ul > li :hover{
+	background-color: #006935;
 }
 

@@ -2,20 +2,47 @@
 //const firebase = require('firebase-admin');
 const express = require('express');
 const app = express();
-const indexRoute = require("./routes/index");
+//const http = require('http');
+//const jsreport = require('jsreport');
+const path = require ('path');
+
+const router = require("./routes/index");
 //const engines=require("consolidate");
 /*const firebaseApp=firebase.initializeApp(
     functions.config().firebase
 );
 */
 
-app.use(express.static("../public"));
+
+app.use(express.static(path.join(__dirname,"public")));
+
 
 //no need to use ejs extension
 app.set("view engine", "ejs");
 
 //calls routrer -index.js
-app.use('/', indexRoute);
+app.use('/', router);
+
+app.get("/pdf", (req,res)=>{
+	res.sendFile("index.html");
+})
+
+/*
+http.createServer((req,res)=>
+{
+	jsreport.render({
+		template: {
+			content: '<h1> Hello worrld </h1>',
+			engine:"ejs",
+			recipe: 'chrome-pdf',
+		}
+	}).then((out)=>{
+		out.stream.pipe(res);
+	}).catch((e)=>{
+		res.end(e.message);
+
+	});
+});*/
 
 
 /*app.get('/',(req,res)=>{

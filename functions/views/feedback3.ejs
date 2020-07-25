@@ -1,0 +1,45 @@
+<%- include("partials/header.ejs") %>
+
+
+<style>
+
+  .center{
+        width: 40%;
+        margin: 0;
+        position: absolute;
+        top: 45%;
+        left: 50%;
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+  }
+
+  #template{
+      border-radius: 1em;
+      padding: 2em;
+      box-shadow: 0px 0px 10px #aaaaaa;
+  }
+
+  .answer{
+      margin: 1em;
+  }
+
+</style>
+
+<div id="template" class="center container">
+    <form action="/f4" method="POST">
+        <div class="form-group">
+            <label for="question">Question/प्रश्न:</label>
+            <p id="question">How was the transportation facility?</p>
+            <p>परिवहन की सुविधा कैसी थी?</p>
+        </div>
+        <label>Answer</label>
+        <center>
+            <img class="answer" id="5" width=70 height=70 src="https://cdn.shopify.com/s/files/1/1061/1924/products/Emoji_Icon_-_Happy_large.png?v=1571606093">
+            <img class="answer" id="4" width=70 height=70 src="https://southendleighyouthforum.files.wordpress.com/2016/03/confusedface-1024x1024.png?w=201&h=201&crop=1&zoom=2">
+            <img class="answer" id="3" width=70 height=70 src="https://cdn.shopify.com/s/files/1/1061/1924/files/Very_sad_emoji_icon_png.png?11518588292157474409">
+        </center>
+        <br>
+        <center><button type="submit" class="btn btn-primary">Submit</button></center>
+    </form>
+</div>
+<%- include("partials/footer.ejs") %>

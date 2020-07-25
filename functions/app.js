@@ -2,47 +2,43 @@
 //const firebase = require('firebase-admin');
 const express = require('express');
 const app = express();
-<<<<<<< HEAD
 const fs=require("fs");
 const bodyParser =	require("body-parser");
+const mongoose     =			require('mongoose');
+const   passport     =   		require("passport");
+const  LocalStrategy=         require("passport-local");
+const   methodOverride=        require("method-override")	;
+const   User 		  =	        require("./models/user");
+app.use(bodyParser.urlencoded({extended:true}));
 const indexRoute = require("./routes/index");
-mongoose     =			require('mongoose'),
-  passport     =   		require("passport"),
- LocalStrategy=         require("passport-local"),
-  methodOverride=        require("method-override")	,
-  User 		  =	        require("./models/user");
-=======
 //const http = require('http');
 //const jsreport = require('jsreport');
 const path = require ('path');
 
-const router = require("./routes/index");
->>>>>>> 41ea9d635174629d8b3329e793e90a7df2fd78d9
+
+
+
 //const engines=require("consolidate");
 /*const firebaseApp=firebase.initializeApp(
     functions.config().firebase
 );
 */
 
-<<<<<<< HEAD
-//Requiring Routes
-app.use('/', indexRoute);
 
 
-var url="mongodb://localhost:27017/cfgteam-7";
+
+
+var url="mongodb://localhost:27017/coodforgood";
 mongoose.connect(url,{useNewUrlParser:true});
 
-app.use(bodyParser.urlencoded({extended:true}));
-=======
 
 app.use(express.static(path.join(__dirname,"public")));
->>>>>>> 41ea9d635174629d8b3329e793e90a7df2fd78d9
+
 
 
 //no need to use ejs extension
 app.set("view engine", "ejs");
 
-<<<<<<< HEAD
 app.use(express.static("../public"));
 
 
@@ -64,16 +60,16 @@ passport.deserializeUser(User.deserializeUser());
 
 
 
+//Requiring Routes
+app.use('/', indexRoute);
 
 
-=======
-//calls routrer -index.js
-app.use('/', router);
 
+/*
 app.get("/pdf", (req,res)=>{
 	res.sendFile("index.html");
 })
-
+/*
 /*
 http.createServer((req,res)=>
 {
@@ -90,7 +86,6 @@ http.createServer((req,res)=>
 
 	});
 });*/
->>>>>>> 41ea9d635174629d8b3329e793e90a7df2fd78d9
 
 
 /*app.get('/',(req,res)=>{

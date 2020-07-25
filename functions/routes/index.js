@@ -13,14 +13,12 @@ router.get('/', (req,res)=>{
 });
 
 
-<<<<<<< HEAD
 
-
-router.get("/register",function(req,res){
-	res.render("register");
+router.get("/signup",function(req,res){
+	res.render("signup");
 });
 
-router.post("/register",function(req,res){
+router.post("/signup",function(req,res){
 
 	var newUser = new User({username:req.body.username});
 	User.register(newUser,req.body.password,function(err,user){
@@ -40,19 +38,18 @@ router.post("/register",function(req,res){
 })
 
 
-=======
 router.get("/donor",(req,res)=>{
 	res.render("donor");
 
 });
 
->>>>>>> 41ea9d635174629d8b3329e793e90a7df2fd78d9
+
 
 router.get("/login",(req,res)=>{
 	res.render("login");
 });
 
-<<<<<<< HEAD
+
 //Handling Login logic
 //app.post("/login",middleware,callback)
 router.post(
@@ -67,8 +64,6 @@ router.post(
       res.redirect('/donor');
     }
   });
-=======
->>>>>>> 41ea9d635174629d8b3329e793e90a7df2fd78d9
 
 
 router.get("/admin",(req,res)=>{

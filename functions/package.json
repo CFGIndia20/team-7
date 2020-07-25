@@ -21,16 +21,11 @@
     "firebase-functions": "^3.6.1",
     "fs": "0.0.1-security",
     "handlebars": "^4.7.6",
-<<<<<<< HEAD
     "method-override": "^3.0.0",
     "mongoose": "^5.9.25",
     "passport": "^0.4.1",
     "passport-local": "^1.0.0",
     "passport-local-mongoose": "^6.0.1"
-=======
-    "jsreport": "^2.9.0",
-    "pdfmake": "^0.1.66"
->>>>>>> 41ea9d635174629d8b3329e793e90a7df2fd78d9
   },
   "devDependencies": {
     "firebase-functions-test": "^0.2.0",

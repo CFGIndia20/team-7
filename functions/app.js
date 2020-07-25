@@ -2,20 +2,90 @@
 //const firebase = require('firebase-admin');
 const express = require('express');
 const app = express();
+const fs=require("fs");
+const bodyParser =	require("body-parser");
+const mongoose     =			require('mongoose');
+const   passport     =   		require("passport");
+const  LocalStrategy=         require("passport-local");
+const   methodOverride=        require("method-override")	;
+const   User 		  =	        require("./models/user");
+app.use(bodyParser.urlencoded({extended:true}));
 const indexRoute = require("./routes/index");
+//const http = require('http');
+//const jsreport = require('jsreport');
+const path = require ('path');
+
+
+
+
 //const engines=require("consolidate");
 /*const firebaseApp=firebase.initializeApp(
     functions.config().firebase
 );
 */
 
-app.use(express.static("../public"));
+
+
+
+
+var url="mongodb://localhost:27017/coodforgood";
+mongoose.connect(url,{useNewUrlParser:true});
+
+
+app.use(express.static(path.join(__dirname,"public")));
+
+
 
 //no need to use ejs extension
 app.set("view engine", "ejs");
 
-//calls routrer -index.js
+app.use(express.static("../public"));
+
+
+
+//Passport Configuration
+app.use(require("express-session")({
+	secret: "$Team7$",
+	resave:false,
+	saveUninitialized:false
+
+}));
+
+app.use(passport.initialize());
+app.use(passport.session());
+passport.use(new LocalStrategy(User.authenticate()));
+passport.serializeUser(User.serializeUser());
+passport.deserializeUser(User.deserializeUser());
+
+
+
+
+//Requiring Routes
 app.use('/', indexRoute);
+
+
+
+/*
+app.get("/pdf", (req,res)=>{
+	res.sendFile("index.html");
+})
+/*
+/*
+http.createServer((req,res)=>
+{
+	jsreport.render({
+		template: {
+			content: '<h1> Hello worrld </h1>',
+			engine:"ejs",
+			recipe: 'chrome-pdf',
+		}
+	}).then((out)=>{
+		out.stream.pipe(res);
+	}).catch((e)=>{
+		res.end(e.message);
+
+	});
+});*/
 
 
 /*app.get('/',(req,res)=>{

@@ -9,6 +9,10 @@ router.get('/', (req,res)=>{
 	res.render("homepage");
 });
 
+router.get("/login",(req,res)=>{
+	res.render("login");
+
+});
 
 //error route always at the enddddd
 router.get('*', (req,res)=>{

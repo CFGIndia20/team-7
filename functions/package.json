@@ -23,5 +23,13 @@
     "firebase-functions-test": "^0.2.0",
     "nodemon": "^2.0.4"
   },
-  "private": true
+  "private": true,
+  "version": "1.0.0",
+  "main": "app.js",
+  "repository": {
+    "type": "git",
+    "url": "\"https://github.com/CFGIndia20/team-7.git\""
+  },
+  "author": "Team-7",
+  "license": "ISC"
 }

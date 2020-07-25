@@ -9,10 +9,7 @@ router.get('/', (req,res)=>{
 	res.render("homepage");
 });
 
-router.get("/login",(req,res)=>{
-	res.render("login");
 
-});
 
 router.get("/admin",(req,res)=>{
 	res.render("admin");
@@ -21,6 +18,11 @@ router.get("/admin",(req,res)=>{
 
 router.get("/rating",(req,res)=>{
 	res.render("rating");
+
+});
+
+router.get("/feedback",(req,res)=>{
+	res.render("feedback");
 
 });
 

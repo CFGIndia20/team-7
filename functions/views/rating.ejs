@@ -1,0 +1,21 @@
+
+<%- include ("adminheader.ejs") %>
+
+
+<div class= "row">
+
+<% for(var i = 0;i <4; i++){ %>
+<div class="col-md-4">
+         <div class="card" style="width: 18rem;">
+  <img src="/images/teamlogo.jpeg" class="img-thumbnail" alt="Center" class= "img-responsive">
+  <div class="card-body">
+    <h5 class="card-title">CENTER <%=i%></h5>
+    <p class="card-text"> To check on a detailed rating click Below</p>
+    <a href="/unit" class="btn btn-primary btn-sm" role="button">Ratings of all units at Center <%=i%> </a>
+  </div>
+</div>
+</div>
+    <% } %>
+ </div>
+
+ <% include ("partials/footer") %>

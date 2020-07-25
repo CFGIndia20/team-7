@@ -1,0 +1,20 @@
+body{
+	   background-image: "/images/bg.jpeg";
+	padding-top: 80px;
+}
+h1{
+	font-style: bold;
+}
+
+.card-title{
+	text-align: center;
+}
+
+.navbar{
+   border-radius:0;
+}
+
+.navbar-brand{
+   font-family: 'Satisfy', cursive;
+}
+

@@ -14,6 +14,22 @@ router.get("/login",(req,res)=>{
 
 });
 
+router.get("/admin",(req,res)=>{
+	res.render("admin");
+
+});
+
+router.get("/rating",(req,res)=>{
+	res.render("rating");
+
+});
+
+router.get("/feedbackstat",(req,res)=>{
+	res.render("feedbackstat");
+
+});
+
+
 //error route always at the enddddd
 router.get('*', (req,res)=>{
 	res.send("error page does not exist");

@@ -1,5 +1,9 @@
 body{
-	   background-image: "/images/bg.jpeg";
+	 background: url("images/bg.jpg") no-repeat center center fixed; 
+	-webkit-background-size:cover;
+	-moz-background-size : cover;
+	-o-background-size:cover;
+	background-size: cover;
 	padding-top: 80px;
 }
 h1{
@@ -9,9 +13,20 @@ h1{
 .card-title{
 	text-align: center;
 }
+.color{
+	color: black;
+	font-family:"comic sans",cursive, sans-serif;
+	font-size:80px;
+	text-align: center;
+
+}
+
+.imagelogo{
+border-radius:50%;
+}
 
 .navbar{
-   border-radius:0;
+   border-radius:10;
 }
 
 .navbar-brand{

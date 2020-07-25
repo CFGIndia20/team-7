@@ -16,6 +16,7 @@ router.get('/donor', (req,res)=>{
 
 router.get("/login",(req,res)=>{
 	res.render("login");
+});
 
 router.get("/admin",(req,res)=>{
 	res.render("admin");
@@ -44,4 +45,4 @@ router.get('*', (req,res)=>{
 });
 
 
-module.exports= router;
+module.exports = router;

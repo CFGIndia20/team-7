@@ -2,6 +2,7 @@
 //const firebase = require('firebase-admin');
 const express = require('express');
 const app = express();
+<<<<<<< HEAD
 const fs=require("fs");
 const bodyParser =	require("body-parser");
 const indexRoute = require("./routes/index");
@@ -10,12 +11,20 @@ mongoose     =			require('mongoose'),
  LocalStrategy=         require("passport-local"),
   methodOverride=        require("method-override")	,
   User 		  =	        require("./models/user");
+=======
+//const http = require('http');
+//const jsreport = require('jsreport');
+const path = require ('path');
+
+const router = require("./routes/index");
+>>>>>>> 41ea9d635174629d8b3329e793e90a7df2fd78d9
 //const engines=require("consolidate");
 /*const firebaseApp=firebase.initializeApp(
     functions.config().firebase
 );
 */
 
+<<<<<<< HEAD
 //Requiring Routes
 app.use('/', indexRoute);
 
@@ -24,11 +33,16 @@ var url="mongodb://localhost:27017/cfgteam-7";
 mongoose.connect(url,{useNewUrlParser:true});
 
 app.use(bodyParser.urlencoded({extended:true}));
+=======
+
+app.use(express.static(path.join(__dirname,"public")));
+>>>>>>> 41ea9d635174629d8b3329e793e90a7df2fd78d9
 
 
 //no need to use ejs extension
 app.set("view engine", "ejs");
 
+<<<<<<< HEAD
 app.use(express.static("../public"));
 
 
@@ -52,6 +66,31 @@ passport.deserializeUser(User.deserializeUser());
 
 
 
+=======
+//calls routrer -index.js
+app.use('/', router);
+
+app.get("/pdf", (req,res)=>{
+	res.sendFile("index.html");
+})
+
+/*
+http.createServer((req,res)=>
+{
+	jsreport.render({
+		template: {
+			content: '<h1> Hello worrld </h1>',
+			engine:"ejs",
+			recipe: 'chrome-pdf',
+		}
+	}).then((out)=>{
+		out.stream.pipe(res);
+	}).catch((e)=>{
+		res.end(e.message);
+
+	});
+});*/
+>>>>>>> 41ea9d635174629d8b3329e793e90a7df2fd78d9
 
 
 /*app.get('/',(req,res)=>{

@@ -1,8 +1,40 @@
 <%- include ("partials/header.ejs") %>
 
+<style>
 
-    <h1>Welcome </h1>
-<p>I hope you enjoy your stay </p>
- 
+    body{
+        background: #f5f5f0;
+    }
+
+    .container{
+        width: 60%;
+        padding: 2em;
+        position: absolute;
+        top: 45%;
+        left: 50%;
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        background: white;
+        box-shadow: 0px 0px 3px black;
+    }
+</style>
+
+<div class="container">
+<center>
+
+    <div class="container h-100, color"> 
+
+        <h1>WELCOME</h1>
+        <p >I hope you enjoy your stay </p>
+            <div class="row mt-5 justify-content-center ">
+                <div class="col-10 col-md-8 col-lg-6">
+                
+        <button type="submit" class=" align-content-center btn btn-primary btn-block" onclick="window.location.href='/login">Login</button>
+        </div>
+        </div>
+
+    </div>
+
+</center>
 
 <% include ("partials/footer") %>

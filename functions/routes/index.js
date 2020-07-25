@@ -13,6 +13,7 @@ router.get('/', (req,res)=>{
 });
 
 
+<<<<<<< HEAD
 
 
 router.get("/register",function(req,res){
@@ -39,12 +40,19 @@ router.post("/register",function(req,res){
 })
 
 
-
-router.get("/login",(req,res)=>{
-	res.render("login");
+=======
+router.get("/donor",(req,res)=>{
+	res.render("donor");
 
 });
 
+>>>>>>> 41ea9d635174629d8b3329e793e90a7df2fd78d9
+
+router.get("/login",(req,res)=>{
+	res.render("login");
+});
+
+<<<<<<< HEAD
 //Handling Login logic
 //app.post("/login",middleware,callback)
 router.post(
@@ -59,6 +67,8 @@ router.post(
       res.redirect('/donor');
     }
   });
+=======
+>>>>>>> 41ea9d635174629d8b3329e793e90a7df2fd78d9
 
 
 router.get("/admin",(req,res)=>{
@@ -77,6 +87,11 @@ router.get("/rating",(req,res)=>{
 
 });
 
+router.get("/feedback",(req,res)=>{
+	res.render("feedback");
+
+});
+
 router.get("/feedbackstat",(req,res)=>{
 	res.render("feedbackstat");
 
@@ -89,4 +104,4 @@ router.get('*', (req,res)=>{
 });
 
 
-module.exports= router;
+module.exports = router;

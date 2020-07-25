@@ -2,7 +2,7 @@
 //const firebase = require('firebase-admin');
 const express = require('express');
 const app = express();
-const router = require("./routes/index");
+const indexRoute = require("./routes/index");
 //const engines=require("consolidate");
 /*const firebaseApp=firebase.initializeApp(
     functions.config().firebase
@@ -15,14 +15,14 @@ app.use(express.static("../public"));
 app.set("view engine", "ejs");
 
 //calls routrer -index.js
-app.use('/', router);
+app.use('/', routerindexRoute);
 
 
 /*app.get('/',(req,res)=>{
     res.render('index')
 })
 app.get("/try",(req,res)=>{
-    res.send("works")
+    res.send("works")	
 })
 app.get("/loggedIn",(req,res)=>{
     res.render("loggedin")

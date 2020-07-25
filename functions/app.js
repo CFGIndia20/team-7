@@ -2,6 +2,7 @@
 //const firebase = require('firebase-admin');
 const express = require('express');
 const app = express();
+const router = require("./routes/index");
 //const engines=require("consolidate");
 /*const firebaseApp=firebase.initializeApp(
     functions.config().firebase

@@ -15,6 +15,32 @@
       margin: 1em;
   }
 
+  input[type=submit]{
+        background-color: #006935;
+        border: none;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: pointer;
+        -webkit-transition-duration: 0.4s;
+        transition-duration: 0.4s;
+        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    }
+
+    input[type=submit]:hover{
+            background-color: #f58220;
+    }
+
+    .center {
+        display: block;
+        margin-left: auto;
+        margin-right: auto; 
+    }
+
 </style>
 
 <form action="/" method="POST">
@@ -22,12 +48,15 @@
 <!-------------------------------------------------Question 1----------------------------------------------------------->
 
     <div id="template" class="container">
+    <img class="center" height=110 width=110 src="http://saskschoolsinfo.com/settlers/grsacks.gif">
+            <br>
+            <centre>
             <div class="form-group">
-                <label for="question">Question/प्रश्न:</label>
-                <p id="question">Was the ration quantity sufficient?</p>
-                <p>क्या राशन की मात्रा पर्याप्त थी?</p>
+                    <label for="question">Question/प्रश्न:</label>
+                    <p id="question">Was the ration quantity sufficient?</p>
+                    <p>क्या राशन की मात्रा पर्याप्त थी?</p>
             </div>
-            <label>Answer</label>
+            </center>
             <center>
                 <img class="answer" onclick="feedback(11);" width=70 height=70 src="https://cdn.shopify.com/s/files/1/1061/1924/files/Very_sad_emoji_icon_png.png?11518588292157474409">
                 <img class="answer" onclick="feedback(12);" width=70 height=70 src="https://southendleighyouthforum.files.wordpress.com/2016/03/confusedface-1024x1024.png?w=201&h=201&crop=1&zoom=2">
@@ -40,12 +69,15 @@
 <!-------------------------------------------------Question 2----------------------------------------------------------->
 
     <div id="template" class="container">
+    <img class="center" height=110 width=110 src="https://st.depositphotos.com/1695366/1400/v/450/depositphotos_14001564-stock-illustration-cartoon-man-sweeping.jpg">
+            <br>    
+            <center>
             <div class="form-group">
                 <label for="question">Question/प्रश्न:</label>
                 <p id="question">How was the sanitation facility?</p>
                 <p>स्वच्छता की सुविधा कैसी थी?</p>
             </div>
-            <label>Answer</label>
+            </center> 
             <center>
                 <img class="answer" onclick="feedback(21);" width=70 height=70 src="https://cdn.shopify.com/s/files/1/1061/1924/files/Very_sad_emoji_icon_png.png?11518588292157474409">
                 <img class="answer" onclick="feedback(22);" width=70 height=70 src="https://southendleighyouthforum.files.wordpress.com/2016/03/confusedface-1024x1024.png?w=201&h=201&crop=1&zoom=2">
@@ -58,13 +90,16 @@
 <!-------------------------------------------------Question 3----------------------------------------------------------->
 
     <div id="template" class="container">
+    <img class="center" height=110 width=150 src="http://www.dpti.sa.gov.au/__data/assets/image/0013/127120/bus-2.png">
+            <br>    
+            <center>
             <div class="form-group">
                 <label for="question">Question/प्रश्न:</label>
                 <p id="question">How was the transportation facility?</p>
                 <p>परिवहन की सुविधा कैसी थी?</p>
             </div>
-            <label>Answer</label>
-            <center>
+            </center> 
+            <center>    
                 <img class="answer" onclick="feedback(31);" width=70 height=70 src="https://cdn.shopify.com/s/files/1/1061/1924/files/Very_sad_emoji_icon_png.png?11518588292157474409">
                 <img class="answer" onclick="feedback(32);" width=70 height=70 src="https://southendleighyouthforum.files.wordpress.com/2016/03/confusedface-1024x1024.png?w=201&h=201&crop=1&zoom=2">
                 <img class="answer" onclick="feedback(33);" width=70 height=70 src="https://cdn130.picsart.com/258161007004212.png">
@@ -76,13 +111,16 @@
 <!-------------------------------------------------Question 4----------------------------------------------------------->
 
     <div id="template" class="container">
+        <img class="center" height=110 width=110 src="https://th.bing.com/th/id/OIP.tK1_kGxlJCo5q18cLTxJKAHaHa?pid=Api&rs=1">
+        <br>    
+        <center>
         <div class="form-group">
             <label for="question">Question/प्रश्न:</label>
             <p id="question">How was the overall stay?</p>
             <p>रहने की सुविधा कैसी थी?</p>
         </div>
-        <label>Answer</label>
-            <center>
+            </center> 
+            <center> 
                 <img class="answer" onclick="feedback(41);" width=70 height=70 src="https://cdn.shopify.com/s/files/1/1061/1924/files/Very_sad_emoji_icon_png.png?11518588292157474409">
                 <img class="answer" onclick="feedback(42);" width=70 height=70 src="https://southendleighyouthforum.files.wordpress.com/2016/03/confusedface-1024x1024.png?w=201&h=201&crop=1&zoom=2">
                 <img class="answer" onclick="feedback(43);" width=70 height=70 src="https://cdn130.picsart.com/258161007004212.png">

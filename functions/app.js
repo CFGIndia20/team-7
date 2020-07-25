@@ -15,7 +15,7 @@ app.use(express.static("../public"));
 app.set("view engine", "ejs");
 
 //calls routrer -index.js
-app.use('/', routerindexRoute);
+app.use('/', indexRoute);
 
 
 /*app.get('/',(req,res)=>{

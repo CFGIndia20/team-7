@@ -82,6 +82,17 @@ router.get("/rating",(req,res)=>{
 
 });
 
+router.get("/rating/:id",function(req,res){
+	var unitId=req.params.id;
+	res.render("showUnit",{id:unitId});
+	
+})
+
+router.get("/rating/:id/unit/:uId",(req,res)=>{
+	var uId=req.params.uId;
+	res.render("report",{uId:uId});
+});
+
 router.get("/feedback",(req,res)=>{
 	res.render("feedback");
 

@@ -1,5 +1,4 @@
-
-<%- include ("adminheader.ejs") %>
+<%- include ("partials/header.ejs") %>
 
 
 <div class= "row">
@@ -9,9 +8,9 @@
          <div class="card" style="width: 18rem;">
   <img src="/images/teamlogo.jpeg" class="img-thumbnail" alt="Center" class= "img-responsive">
   <div class="card-body">
-    <h5 class="card-title">CENTER <%=i%></h5>
-    <p class="card-text"> To check on a detailed rating click Below</p>
-    <a href="/rating/1" class="btn btn-primary btn-sm" role="button">Unit Ratings </a>
+    <h5 class="card-title">Unit <%=i%></h5>
+    <p class="card-text"> To get a detailed rating click Below</p>
+    <a href="/rating/<%=id%>/unit/1" class="btn btn-primary btn-sm" role="button"> Report </a>
   </div>
 </div>
 </div>
@@ -22,9 +21,9 @@
          <div class="card" style="width: 18rem;">
   <img src="/images/teamlogo.jpeg" class="img-thumbnail" alt="Center" class= "img-responsive">
   <div class="card-body">
-    <h5 class="card-title">CENTER <%=i%></h5>
-    <p class="card-text"> To check on a detailed rating click Below</p>
-    <a href="/rating/2" class="btn btn-primary btn-sm" role="button">Unit Ratings </a>
+    <h5 class="card-title">Unit <%=i%></h5>
+    <p class="card-text"> To get a detailed analysis click Below</p>
+    <a href="/rating/<%=id%>/unit/2" class="btn btn-primary btn-sm" role="button">Report</a>
   </div>
 </div>
 </div>
@@ -33,4 +32,7 @@
 
  </div>
 
- <% include ("partials/footer") %>
+
+
+
+<%- include ("partials/header.ejs") %>

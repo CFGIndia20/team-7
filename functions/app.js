@@ -1,3 +1,4 @@
+require("dotenv").config()
 //const functions = require('firebase-functions');
 //const firebase = require('firebase-admin');
 const express = require('express');
@@ -45,7 +46,7 @@ app.use(express.static("../public"));
 
 //Passport Configuration
 app.use(require("express-session")({
-	secret: "$Team7$",
+	secret: process.env.SECRET,
 	resave:false,
 	saveUninitialized:false
 
@@ -56,7 +57,6 @@ app.use(passport.session());
 passport.use(new LocalStrategy(User.authenticate()));
 passport.serializeUser(User.serializeUser());
 passport.deserializeUser(User.deserializeUser());
-
 
 
 

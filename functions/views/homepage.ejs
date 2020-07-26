@@ -4,37 +4,61 @@
 
     body{
         background: #f5f5f0;
+        background-image: url(https://images.unsplash.com/photo-1518101645466-7795885ff8f8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60);
+        background-repeat: none;
+        -webkit-background-size:cover;
+    -moz-background-size : cover;
+    -o-background-size:cover;
+    background-size: cover;
+
     }
 
     .container{
-        width: 60%;
+        width: 40%;
         padding: 2em;
         position: absolute;
         top: 45%;
         left: 50%;
         -ms-transform: translate(-50%, -50%);
         transform: translate(-50%, -50%);
-        background: white;
-        box-shadow: 0px 0px 3px black;
+        color: white;
     }
 </style>
 
-<div class="container">
+<!-- <div class="container"> -->
 <center>
 
-    <div class="container h-100, color"> 
+    <!-- <div class="container">  -->
 
         <h1>WELCOME</h1>
-        <p >I hope you enjoy your stay </p>
+        <p > Transforming lives for a better world </p>
             <div class="row mt-5 justify-content-center ">
                 <div class="col-10 col-md-8 col-lg-6">
                 
-        <button type="submit" class=" align-content-center btn btn-primary btn-block" onclick="window.location.href='/login">Login</button>
+        <button type="submit" class=" align-content-center btn btn-primary btn-block" onclick="window.location.href='/login'">Login</button>
         </div>
         </div>
 
-    </div>
+    <!-- </div> -->
 
 </center>
 
-<% include ("partials/footer") %>
+</div>
+
+<div style="float: right;margin-top: 15%;">
+<iframe width="350" height="350" allow="microphone;" src="https://console.dialogflow.com/api-client/demo/embedded/7fbfdefd-09d9-4335-840b-b0cf7c2ec491"></iframe>
+</div>
+
+<!-- JS, Popper.js, and jQuery -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+
+
+</body>
+</html>
+
+
+
+
+<!-- <% include ("partials/footer") %> -->

@@ -43,7 +43,7 @@
 
 </style>
 
-<form action="/" method="POST">
+<form action="/feedback" method="POST">
 
 <!-------------------------------------------------Question 1----------------------------------------------------------->
 
@@ -133,7 +133,7 @@
 
 </div>
 
-    <center><input type="submit"></center>
+    <center><input id="subBtn" type="submit"></center>
 
 </form>
 
@@ -192,8 +192,13 @@
             break;
         }
 
-        alert(answers);
+        //alert(answers);
     }
+
+    var subbtn=document.getElementById("subBtn");
+    subbtn.addEventListener("click",function(){
+            alert("Thankyou for submitting your response ");
+    });
 
 </script>
 

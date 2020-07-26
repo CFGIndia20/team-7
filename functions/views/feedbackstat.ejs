@@ -1,0 +1,26 @@
+<%- include("partials/header.ejs") %>
+
+<div class="container">
+	<img src="/images/Capture.png">
+	
+</div>
+<br>
+<h3>Action needed for beneficiaries with low response</h3>
+
+<form action="/feedbackstat" method="POST" >
+<input type="submit" id="smsBtn" value="Send SMS">
+</form>
+
+
+<script type="text/javascript">
+	
+var smsBtn=document.getElementById("smsBtn");
+smsBtn.addEventListener("click",function(){
+	alert("The message has been sent successfully.");
+
+});
+
+</script>
+
+
+<%- include("partials/footer.ejs") %>

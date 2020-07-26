@@ -29,7 +29,7 @@ router.post("/signup",function(req,res){
 		else{
 			passport.authenticate("local")(req,res,function(){
 
-				res.redirect("/success");
+				res.redirect("/");
 			});
 		}
 	});	
@@ -98,10 +98,21 @@ router.get("/feedback",(req,res)=>{
 
 });
 
+router.post("/feedback",(req,res)=>{
+	res.redirect("/");
+
+});
+
 router.get("/feedbackstat",(req,res)=>{
 	res.render("feedbackstat");
 
 });
+
+router.post("/feedbackstat",(req,res)=>{
+	res.redirect("/");
+
+});
+
 
 
 //error route always at the enddddd

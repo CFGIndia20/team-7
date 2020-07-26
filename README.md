@@ -11,9 +11,7 @@ There are 2 functional branches of this project:
 
 ## 1.Master
 
-put more descriptions here
-
-A chatbor for the donor to converse with to get updates & reports whenever they wish. 
+A chatbot for the donor to converse with to get updates & reports whenever they wish. 
 The donor will also have login functionality, through which s/he can get detailed reports of their previous donations, how they have been used, and how many children were impacted.
 
 A feedback form that will be used at the NGO when they're leaving the facility, which facilitates more feedback from people who do not understand English, and from people who might be illiteral, by giving visual questions and answers. This also safeguards against data manipulation by volunteers, since once explained, the reviewers will know how to go about the feedback without having to be literate.

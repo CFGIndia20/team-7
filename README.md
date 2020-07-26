@@ -11,10 +11,11 @@ There are 2 functional branches of this project:
 
 ## 1.Master
 
-A chatbot for the donor to converse with to get updates & reports whenever they wish. 
-The donor will also have login functionality, through which s/he can get detailed reports of their previous donations, how they have been used, and how many children were impacted.
-
-A feedback form that will be used at the NGO when they're leaving the facility, which facilitates more feedback from people who do not understand English, and from people who might be illiteral, by giving visual questions and answers. This also safeguards against data manipulation by volunteers, since once explained, the reviewers will know how to go about the feedback without having to be literate.
+The Master contains the various routes which handle the various data creation and manipulation requests.
+We have used MongoDB and passport.js for user authentication. We have added a isAdmin attribute for all users which can be changed from the backend to give Admin access to a particular user.
+A feature of generating reports for a particular unit in a Centre has been encorporated with the help of chart.js which helps in generating visually attractive reports.
+To ease the process of collecting feedback from a population with a weak literacy background, we have developed a form with easy to understand images and emojis as ratings to the several parameters. Also a hindi translation of this parameters will help them to understand the question in an efficient manner.
+For a better communication channel with the donors we have developed a Chatbot using Google Dialogflow which can provide the user with relevant information as per the requirements but due to time constraints we couldn't implement the feature to dynamically fetch data from the database.
 
 
 
